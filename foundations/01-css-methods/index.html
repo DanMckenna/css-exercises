@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methods for Adding CSS</title>
+    
+    <!-- Reference to an external CSS file -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Internal style definitions -->
+    <style>
+      p {
+        background-color: green;
+        color: white;
+        font-size: 18;
+      }
+    </style>
   </head>
   <body>
+    <!-- The below div element is styled using CSS defined in an external file named index.css -->
     <div>Style me via the external method!</div>
+
+    <!-- The below p element is styled using internal CSS defined within the head element of this file-->
     <p>I would like to be styled with the internal method, please.</p>
-    <button>Inline Method</button>
+
+    <!-- The below button element is styled using inline CSS -->
+    <button style="background-color: orange; font-size: 18px;">Inline Method</button>
   </body>
 </html>
